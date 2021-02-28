@@ -70,4 +70,4 @@ async def on_message(message):
         embed = discord.Embed(title='솜브라 꿀값', description='```꿀값 추가 준비중.. ```', colour=discord.Colour.red())
         await message.channel.send(embed=embed)
 
-client.run("ODExMDU3OTIzOTk1MzM2NzE2.YCsqjQ.nWnEnw4BnJjnJamUqn7QOgjee60")
+client.run("token")
