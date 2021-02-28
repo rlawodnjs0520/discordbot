@@ -1,4 +1,5 @@
 import discord
+import os
 
 client = discord.Client()
 
@@ -69,5 +70,8 @@ async def on_message(message):
     if message.content == "!꿀값 솜브라":
         embed = discord.Embed(title='솜브라 꿀값', description='```꿀값 추가 준비중.. ```', colour=discord.Colour.red())
         await message.channel.send(embed=embed)
+        
+        
 
-client.run("token")
+access_token = os.environ["BOT_TOKEN"]       
+client.run("access_token")
